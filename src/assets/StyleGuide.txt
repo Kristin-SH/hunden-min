@@ -1,0 +1,17 @@
+Primary Colours:
+    Green: #87c662
+    Dark Green: #41493b
+    Lighter Green: #a5ae9d
+    Light Blue: #00cdfa
+    Blue: #0096c1
+    Orange: #f87242
+
+Fonts:
+    Roboto
+    Bitter
+    Oswald
+
+Headings:
+    H1: Main Title
+    H2: 
+    H3: Course Card Titles
