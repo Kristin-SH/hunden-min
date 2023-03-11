@@ -11,9 +11,9 @@
                 </div>
                 <div class="link">
                     <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li><a href="#">våre kurs</a></li>
+                        <li><a href="#">instruktører</a></li>
+                        <li><a href="#">kontakt oss</a></li>
                         <li><a href="#">pålogging</a></li>
                     </ul>
                 </div>
@@ -24,7 +24,8 @@
 
 <script>
     export default {
-        name: 'MainHeader'
+    name: 'MainHeader',
+        
     }
 </script>
 
@@ -32,12 +33,14 @@
 
 section {
     background-color: white;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
+    font-family: "Oswald";
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
 }
 
 .logo img {
@@ -49,7 +52,7 @@ section {
 
 .contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-bottom: 1px solid grey;
 }
 

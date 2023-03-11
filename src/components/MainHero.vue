@@ -1,13 +1,16 @@
 <template>
     <section>
         <div class="container">
-            <h1>Velkommen til Hundenmin</h1>
-            <p>Hundenmin hundeskole er den lokale hundeskolen i Vestfold. I Ulvika (Tønsberg) disponerer vi     flotte treningsfasiliteter med muligheter for både ute og inne treninger.</p>
-            <p>Hos oss står hund og eiers behov i første rekke.</p>
-            <p>Våre instruktører er opptatte av at hund og eier skal bli sett og veiledet, slik at dere lykkes  med treningen.</p>
-            <p>Vår visjon: Hundenmin hundeskole et kundevennlig og...</p>
-            <button class="btn">finn ut mer</button>
-            <button class="btn">bestill kurs nå</button>
+            <div class="card-container">
+                <div class="card">
+                    <h1>Hundenmin</h1>
+                    <h2>Den naturlige veien til en veltilpasset hund</h2>
+                    <div class="buttons-container">
+                        <div class="buttoni"><button class="btn">finn ut mer</button></div>
+                        <div class="buttoni"><button class="btn">bestill kurs nå</button></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -21,13 +24,63 @@
 <style scoped>
 section {
     background-color: var(--main-green);
+    background-image: url('..\assets\images\dogs.jpg');
+    height: 700px;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.btn {
-    padding: 10px 5px;
-    border: 2px white solid;
-    border-radius: 5px;
-    width: 20%;
-    margin: 20px;
+
+h1, h2 {
+    text-shadow: 2px 2px 5px #1d1d1d;
+    font-family: "Roboto";
+}
+
+h1 {
+    color: var(--main-green);
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: var(--main-grey);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+.card-container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.card p {
+    width: 30%;    
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttoni {
+    display: block;
+    width: 200px;
+}
+
+.buttoni .btn {
+    width: 100%;
 }
 
 </style>
