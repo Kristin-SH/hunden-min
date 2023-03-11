@@ -3,7 +3,6 @@
         <div class="container">
             <div class="card-container">
                 <div class="card">
-                    <h1>Hundenmin</h1>
                     <h2>Den naturlige veien til en veltilpasset hund</h2>
                     <div class="buttons-container">
                         <div class="buttoni"><button class="btn">finn ut mer</button></div>
@@ -25,7 +24,7 @@
 section {
     background-color: var(--main-green);
     background-image: url('..\assets\images\dogs.jpg');
-    height: 700px;
+    height: 800px;
     background-position: 0px 30%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +43,7 @@ h1 {
 }
 
 h2 {
-    color: var(--main-grey);
+    color: white;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -63,6 +62,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: white;
+    min-width: 50%;
 }
 
 .card p {

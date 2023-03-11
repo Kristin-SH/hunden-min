@@ -7,7 +7,7 @@
             </div>
             <nav>
                 <div class="logo">
-                    <img src="src\assets\images\hundenmin-weblogo.png" alt="Hunden min">
+                    <img src="/src/assets/images/hundenmin-weblogo.png" alt="Hunden min">
                 </div>
                 <div class="link">
                     <ul>

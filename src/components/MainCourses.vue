@@ -8,7 +8,7 @@
             <div class="course-container">
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\valpekurs.jpeg" alt="">
+                        <img src="/src/assets/images/valpekurs.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Valpekurs</h3>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\barn_hund_kurs.jpeg" alt="">
+                        <img src="/src/assets/images/barn_hund_kurs.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Barn Og Hund-Kurs</h3>
@@ -39,18 +39,18 @@
                 </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\massasje.jpeg" alt="">
+                        <img src="/src/assets/images/massasje.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Massasje- og stretchingkurs</h3>
-                        <p>SKunne du tenke deg å lære hvordan du kan forebygge skader og slitasje på hunden din?</p>
+                        <p>Kunne du tenke deg å lære hvordan du kan forebygge skader og slitasje på hunden din?</p>
                         <p>Å lære massasje og stretching er godt for både hund og eier da du knytter enda nærmere bånd mellom deg og hunden, og ikke minst er det forebyggende i en aktiv hverdag. Teknikkene du lærer på kurset kan brukes både som avslapping eller etter en god treningsøkt og konkurranse.</p><br>
                         <button class="btn">Les mer</button>
                     </div>
                 </div>
                 <div class="course">
                         <div class="course-img">
-                            <img src="src\assets\images\rally.jpeg" alt="">
+                            <img src="/src/assets/images/rally.jpeg" alt="">
                         </div>
                         <div class="course-text">
                             <h3>Rallylydighet</h3>
@@ -61,7 +61,7 @@
                     </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\agility.jpeg" alt="">
+                        <img src="/src/assets/images/agility.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Agility</h3>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\unghundkurs.jpeg" alt="">
+                        <img src="/src/assets/images/unghundkurs.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Unghundkurs </h3>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\lydighet.jpeg" alt="">
+                        <img src="/src/assets/images/lydighet.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Hverdagslydighet</h3>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="course">
                     <div class="course-img">
-                        <img src="src\assets\images\treningsgruppe.jpeg" alt="">
+                        <img src="/src/assets/images/treningsgruppe.jpeg" alt="">
                     </div>
                     <div class="course-text">
                         <h3>Treningsgruppe</h3>
