@@ -2,8 +2,8 @@
     <section>
         <div class="container">
             <div class="contact">
-               <p>+47 465 41 107</p>
-               <p>post@hundenmin.no</p>
+               <p><span class="material-symbols-outlined">phone_android</span> +47 465 41 107</p>
+               <p><span class="material-symbols-outlined">mail</span> post@hundenmin.no</p>
             </div>
             <nav>
                 <div class="logo">
@@ -37,14 +37,24 @@ section {
 }
 
 .container {
-    font-family: "Oswald";
+    
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
 }
 
+.material-symbols-outlined {
+    vertical-align: bottom;
+    font-size: 2rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 .logo img {
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     width: 100%;
     min-width: 150px;
     height: auto;
@@ -52,8 +62,13 @@ section {
 
 .contact {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid grey;
+}
+
+.contact p {
+    font-family: "Oswald";
 }
 
 nav {
@@ -70,11 +85,13 @@ ul {
 }
 
 .link a {
+    font-family: "Oswald";
     display: block;
     text-align: center;
     padding: 6px;
     color: black;
     border-bottom: 2px white solid;
+    text-transform: uppercase;
 }
 
 .link a:hover {

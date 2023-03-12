@@ -23,7 +23,7 @@
 <style scoped>
 section {
     background-color: var(--main-green);
-    background-image: url('..\assets\images\dogs.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..\assets\images\dogs.jpg');
     height: 800px;
     background-position: 0px 30%;
     background-repeat: no-repeat;
