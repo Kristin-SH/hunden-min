@@ -1,34 +1,31 @@
 <template>
-    <div>
-        <button @click="toggleAccordion()" class="flex items-center space-x-3" :aria-expanded="isOpen"
-            :aria-controls="`collapse${_uid}`">
-            <slot name="title" />
-            <svg class="w-3 transition-all duration-200 transform" :class="{
-                'rotate-180': isOpen,
-                'rotate-0': !isOpen,
-            }" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" aria-hidden="true">
-                <path d="M15 1.2l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
+   <div id="app">
+     <div class="demo-container">
+      <div class="demo-img">
+        <img src="src\assets\images\agility.jpeg" alt="">
+        <button @click="isShowing ^= true">Click Me</button>
+      </div>
+      <div v-show="isShowing" class="demo-text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, maiores perspiciatis voluptates earum blanditiis quis officiis illo corrupti. Repellat corporis sed expedita possimus pariatur deserunt quis illum, excepturi ipsa eos labore neque repudiandae a deleniti iste nam cumque, debitis laboriosam?</p>
+      </div>
+     </div>
 
-        <div v-show="isOpen" :id="`collapse${_uid}`">
-            <slot name="content" />
-        </div>
-    </div>
+ </div>
 </template>
 
 <script>
 export default {
-    data() {
+  data() {
         return {
-            isOpen: false,
-        };
-    },
-
-    methods: {
-        toggleAccordion() {
-            this.isOpen = !this.isOpen;
-        },
-    },
+            isShowing:false
+        }
+    }
 };
 </script>
+
+<style scoped>
+.demo-container {
+  display: flex;
+}
+</style>

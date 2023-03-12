@@ -23,10 +23,10 @@
                     <div class="course-text">
                         <h3>Barn Og Hund-Kurs</h3>
                         <p>Samspillet mellom de minste i familien og hunden er svært viktig! Barn og hund kursene våre fokuserer på mestring, lek og samarbeidet mellom barn og hund. Anbefalt aldersgruppe: 8 - 12 år </p><br>
-                        <button class="btn">Les mer</button>
+                        <button @click="isShowing ^= true" class="btn">Les mer</button>
                     </div>
                 </div>
-                <div class="reveal">
+                <div v-show="isShowing" class="target">
                     <h3>Eksempel på "mer info"</h3>
                     <p>Det vil legges opp til enkle øvelser og lek slik at barna synes treningen er gøy og full av mestring.</p>
                     <p>Instruktøren vil tilrettelegge for at dette skal være en positiv og lærerik trening for familiens yngste medlemmer.</p>
@@ -45,8 +45,19 @@
                         <h3>Massasje- og stretchingkurs</h3>
                         <p>Kunne du tenke deg å lære hvordan du kan forebygge skader og slitasje på hunden din?</p>
                         <p>Å lære massasje og stretching er godt for både hund og eier da du knytter enda nærmere bånd mellom deg og hunden, og ikke minst er det forebyggende i en aktiv hverdag. Teknikkene du lærer på kurset kan brukes både som avslapping eller etter en god treningsøkt og konkurranse.</p><br>
-                        <button class="btn">Les mer</button>
+                        <button @click="isShowing ^= true" class="btn">Les mer</button>
                     </div>
+                </div>
+                <div v-show="isShowing" class="target">
+                    <h3>Eksempel på "mer info"</h3>
+                    <p>Det vil legges opp til enkle øvelser og lek slik at barna synes treningen er gøy og full av mestring.</p>
+                    <p>Instruktøren vil tilrettelegge for at dette skal være en positiv og lærerik trening for familiens yngste medlemmer.</p>
+                    <p>Kursavgift: 1.495,-</p>
+                    <p>Antall hunder på kurset: maks 6 stk</p>
+                    <p>Antall kurskvelder: 6 praksis</p>
+                    <p>Neste ledig kurs: (<i>Her kommer kurs dato</i>)</p>
+                    <p>Velkommen på kurs!</p>
+                    <button class="btn">Meld deg på her</button>
                 </div>
                 <div class="course">
                         <div class="course-img">
@@ -107,7 +118,13 @@
 <script>
 
 export default {
-    name: 'MainCourses'
+    name: 'MainCourses',
+
+    data() {
+        return {
+            isShowing:true
+        }
+    }
 }
 
 </script>
@@ -123,13 +140,12 @@ section {
 
 .course-container {
     display: flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .course {
     display: flex;
-    flex-direction: row;
     box-shadow: var(--shadow);
     margin-top: 2rem;
     padding: 5px;
@@ -141,8 +157,8 @@ section {
 }
 
 .course-img img {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .course-text {
@@ -153,21 +169,21 @@ section {
 }
 
 .btn {
+    
     float: right;
 }
 
 /* CSS */
 
 
-.reveal {
-    /* display: none; */
+.target {
     background-color: rgb(216, 212, 212);
     padding: 10px 10px 10px 20px;
     text-align: left;
-    /* box-shadow: var(--shadow); */
+    width: 100%;
 }
 
-.reveal p {
+.target p {
     margin-left: 20px;
 }
 </style>
