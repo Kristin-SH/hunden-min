@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="Instructors">
         <div class="container">          
                 <div class="text">
                     <h2>Våre instruktører</h2>

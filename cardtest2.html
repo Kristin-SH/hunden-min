@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+    background-color: rgb(202, 202, 202);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(128, 240, 197);
+}
+
+.card-image {
+    width: 550px;
+    min-Height: 100%;
+    background-color: rgb(214, 128, 240);
+    background-image: url('/src/assets/images/agility.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-info-text {
+    background-color: rgb(240, 191, 128);
+    padding: 10px;
+}
+
+.card-info-button {
+    background-color: rgb(240, 128, 184);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+    flex-direction: column;
+    }
+
+    .card-image {
+    width: 100%;
+    Height: 350px;
+    background-color: rgb(214, 128, 240);
+    background-image: url('/src/assets/images/agility.jpeg');
+    background-size: cover;
+    background-position: center center;
+    }
+
+    .card-info-button .btn{
+        background-color: coral;
+        width: 100%;
+        border: 2px red solid;
+        padding: 5px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-info">
+                <div class="card-info-text">
+                    <h3>Kurs Tittel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, facere vitae inventore rerum natus hic maxime aperiam, nemo culpa earum veritatis labore tenetur minima eos neque odit ex autem reprehenderit nesciunt! Autem repellendus itaque exercitationem inventore adipisci earum suscipit ducimus.
+                    </p>
+                </div>
+                <div class="card-info-button">
+                    <button class="btn">Click me!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

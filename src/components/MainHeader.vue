@@ -3,7 +3,7 @@
         <div class="container">
             <div class="contact">
                <p><span class="material-symbols-outlined">phone_android</span> +47 465 41 107</p>
-               <p><span class="material-symbols-outlined">mail</span> post@hundenmin.no</p>
+               <p><span class="material-symbols-outlined">mail</span><a href="mailto:post@hundenmin.no?subject=Forespørsel%20fra%20nettsiden">post@hundenmin.no</a></p>
             </div>
             <nav>
                 <div class="logo">
@@ -11,9 +11,9 @@
                 </div>
                 <div class="link">
                     <ul>
-                        <li><a href="#">våre kurs</a></li>
-                        <li><a href="#">instruktører</a></li>
-                        <li><a href="#">kontakt oss</a></li>
+                        <li><a href="#Courses">våre kurs</a></li>
+                        <li><a href="#Instructors">instruktører</a></li>
+                        <li><a href="#Contact">kontakt oss</a></li>
                         <li><a href="#">pålogging</a></li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@
 
 <script>
     export default {
-    name: 'MainHeader',
+    name: 'MainHeader'
         
     }
 </script>
@@ -37,7 +37,6 @@ section {
 }
 
 .container {
-    
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -54,7 +53,7 @@ section {
 }
 
 .logo img {
-    padding: 10px 0 0 0;
+    padding: 10px 10px 0 10px;
     width: 100%;
     min-width: 150px;
     height: auto;
@@ -98,5 +97,22 @@ ul {
     color: var(--main-orange);
     border-bottom: 2px var(--main-orange) solid;
 }
+
+@media screen and (max-width: 800px) {
+    nav {
+    flex-direction: column;
+    }
+
+    ul {
+    flex-direction: column;
+    }
+
+    .link a {
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+
+}
+
 
 </style>

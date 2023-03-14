@@ -32,10 +32,12 @@
 
 <style scoped>
 section {
-    background-color: #3a3a3a;
+    background-color: #252525;
 }
 
 .material-symbols-outlined {
+    vertical-align: bottom;
+    padding-bottom: 5px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -50,6 +52,11 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     color: white;
+}
+
+.foot-container p {
+    font-family: "Roboto";
+    font-weight: 400;
 }
 
 .info, .nyhetsbrev {

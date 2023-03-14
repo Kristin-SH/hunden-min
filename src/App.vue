@@ -2,11 +2,11 @@
 import { RouterLink, RouterView } from 'vue-router'
 import MainHeader from '../src/components/MainHeader.vue'
 import MainHero from '../src/components/MainHero.vue'
-import MainCourses from '../src/components/MainCourses.vue'
+import MainCourses from './components/MainCourses.vue'
 import MainInstructors from '../src/components/MainInstructors.vue'
 import MainAboutUs from '../src/components/MainAboutUs.vue'
 import MainContact from '../src/components/MainContact.vue'
-
+import Login from '../src/components/Login.vue'
 import MainFooter from '../src/components/MainFooter.vue'
 
 
@@ -20,7 +20,6 @@ import MainFooter from '../src/components/MainFooter.vue'
     <MainCourses />
     <MainInstructors />
     <MainContact />
-    
     <MainFooter />
     <RouterView />
   </div>

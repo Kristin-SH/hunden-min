@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="Contact">
         <div class="container">
             <h2>Kontakt oss</h2>
             <div class="info">
@@ -68,6 +68,7 @@ section {
 }
 
 .material-symbols-outlined {
+    vertical-align: bottom;
     font-size: 4rem;
   font-variation-settings:
   'FILL' 0,
@@ -89,6 +90,10 @@ section {
     align-items: center;
     justify-content: center;
     min-width: 2rem;
+}
+
+.info-card p {
+    font-family: "Oswald";
 }
 
 .info-icon {
